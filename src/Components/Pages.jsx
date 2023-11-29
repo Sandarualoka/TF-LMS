@@ -1,9 +1,8 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { Link } from 'react-router-dom';
 import { useEffect } from 'react'
 import { useState } from 'react'
-import Swal from 'sweetalert2'
+
 import axios from 'axios'
 
 const baseUrl='https://minipro.pythonanywhere.com/api'

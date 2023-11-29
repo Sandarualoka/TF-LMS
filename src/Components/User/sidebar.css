@@ -1,0 +1,9 @@
+/* Add this CSS in your stylesheet or in a style tag within your component */
+.list-group-item-action:hover {
+    background-color: #007bff; /* Blue color */
+    color: #fff; /* Text color */
+    transition: 0.3s ease-in;
+  }
+
+  
+  

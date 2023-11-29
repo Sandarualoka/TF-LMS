@@ -48,14 +48,12 @@ import Search from './Search'
 import StudyMaterial from './Teacher/StudyMaterial'
 import AddStudyMaterial from './Teacher/AddStudyMaterial'
 import StudyStudentMaterial from './User/StudyStudentMaterial'
-import AttemptedStudent from './Teacher/AttemptedStudent'
 import Category from '../Category'
 import Faq from './Faq'
 import Pages from './Pages'
 import MyTeachers from './User/MyTeachers'
 import AttemptedQuiz from './Teacher/AttemptedQuiz'
 import MiniVideoPlayer from './MiniVideoPlayer'
-import { useEffect } from 'react'
 import Policy from './Policy'
 
 const Main = () => {
@@ -66,6 +64,7 @@ const Main = () => {
       <Routes>
           <Route path='/login' element={<Login />}/>
           <Route path='/' element={<Home />}/>
+          //dahsboard--//
           <Route path='/detail/:course_id' element={<CourseDetail />}/>
           <Route path='/user-register' element={<Register />}/>
           <Route path='/user-dashboard' element={<Dashboard />}/>
@@ -75,6 +74,7 @@ const Main = () => {
           <Route path='/recommended-courses' element={<RecomemdedCourses/>}/>
           <Route path='/profile-setting' element={<ProfileSetting/>}/>
           <Route path='/change-password' element={<ChangePassword/>}/>
+          //dashboard--//
           <Route path='/teacher-login' element={<TeacherLogin />}/>
           <Route path='/teacher-logout' element={<TeacherLogout />}/>
           <Route path='/user-logout' element={<UserLogout />}/>
@@ -99,7 +99,7 @@ const Main = () => {
           <Route path='/study-material/:course_id' element={<StudyMaterial  />}/>
           <Route path='/edit-chapter/:chapter_id' element={<EditChapter  />}/>
           <Route path='/edit-course/:course_id' element={<EditCourse  />}/>
-          <Route path='/all-courses' element={<AllCourses  />}/>\
+          <Route path='/all-courses' element={<AllCourses  />}/>
           <Route path='/popular-courses' element={<PopularCourses  />}/>
           <Route path='/teacher-skill-courses/:skill_name/:teacher_id' element={<TeacherSkillCourses />}/>    
           <Route path='/course/:category_id/:category_slug' element={<CategoryCourses />}/>    
@@ -113,6 +113,8 @@ const Main = () => {
           <Route path='/add-study/:course_id' element={<AddStudyMaterial  />}/>
           <Route path='/user/study-material/:course_id' element={<StudyStudentMaterial  />}/>
           <Route path='/attempted-students/:quiz_id' element={<AttemptedQuiz  />}/>
+
+          //Footer//
           <Route path='/faq' element={<Faq />}/>
           <Route path='/page/:page_id/:page_slug' element={<Pages />}/>
           <Route path='/mini/:course_id' element={<MiniVideoPlayer  />}/>

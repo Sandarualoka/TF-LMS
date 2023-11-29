@@ -27,11 +27,11 @@ const RecomemdedCourses = () => {
         document.title='LMS | Recommended Courses'
       })
   return (
-    <div className='container mt-4'>
-        <div className='row'>
-            <aside className='col-md-3'>
-                <Sidebar />
-            </aside>
+    <div style={{ display: 'flex', minHeight: '100vh' }}>
+        
+        <aside style={{ flex: '0 0 250px' }}>
+        <Sidebar />
+      </aside>
             <section className='col-md-9'>
                 <div className='card'>
                     <h5 className='card-header'><i class="bi bi-megaphone"> </i>  Recommended  Courses for you</h5>
@@ -59,7 +59,7 @@ const RecomemdedCourses = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        
     </div>
   )
 }

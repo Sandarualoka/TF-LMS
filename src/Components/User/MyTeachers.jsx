@@ -74,11 +74,11 @@ const MyTeachers = () => {
       }
 
   return (
-    <div className='container mt-4'>
-        <div className='row'>
-            <aside className='col-md-3'>
-                <Sidebar />
-            </aside>
+    <div style={{ display: 'flex', minHeight: '100vh' }}>
+       
+       <aside style={{ flex: '0 0 250px' }}>
+        <Sidebar />
+      </aside>
             <section className='col-md-9'>
                 <div className='card'>
                     <h5 className='card-header'><i class="bi bi-person-check-fill"/> My Teachers</h5>
@@ -137,7 +137,7 @@ const MyTeachers = () => {
                     </div>
                 </div>
             </section>
-        </div>
+        
     </div>
   )
 }
